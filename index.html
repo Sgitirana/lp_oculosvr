@@ -133,6 +133,7 @@
                 
                 <div class="discover__container container swiper-container">
                     <div class="swiper-wrapper">
+
                         <!--******************** DISCOVER 1 ********************-->
                         <div class="discover__card swiper-slide">
                             <img src="assets/img/discover1.jpg" alt="" class="discover__img">
@@ -155,8 +156,8 @@
                         <div class="discover__card swiper-slide">
                             <img src="assets/img/discover3.jpg" alt="" class="discover__img">
                             <div class="discover__data">
-                                <h2 class="discover__title">Áudio 3D</h2>
-                                <span class="discover__description">Volume e qualidade que ajudam na imersão.</span>
+                                <h2 class="discover__title">Realidade Virtual</h2>
+                                <span class="discover__description">Onde o Virtual se torna Real.</span>
                             </div>
                         </div>
 
@@ -205,10 +206,13 @@
 
                     <div class="experience__img grid">
                         <div class="experience__overlay">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Edf1h-IZ_d0?si=y2Ab7P5yH-in4eiH" 
-                            title="YouTube video player" style="max-width: 80%" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen></iframe>
+                            <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4" alt="">
+                            </video>
+    
+                            <button class="button button--flex video__button" id="video-button">
+                                <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                            </button>
                         </div>
                         
                         <div class="experience__overlay">
@@ -228,14 +232,13 @@
                         Óculos de Realidade Virtual.
                     </p>
 
-                    <div class="video__content">
-                        <video id="video-file">
-                            <source src="assets/video/video.mp4" type="video/mp4">
-                        </video>
-
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
+                    <div class="video__container container">
+                        <div class="video__content">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Edf1h-IZ_d0?si=y2Ab7P5yH-in4eiH" 
+                            title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
